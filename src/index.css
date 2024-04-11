@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    .btn {
+        transition: transform 0.2s ease;
+    }
+    .btn:hover {
+        transform: scale(1.05);
+    }
+    .btn:active {
+        transform: scale(0.95);
+    }
+    .emoji::-webkit-scrollbar {
+        width: 8px;
+        height: 12px;          
+    }
+    .emoji::-webkit-scrollbar-thumb {
+        background-color: #333;  
+        border-radius: 36px;
+        border: 3px solid rgb(35,35,35);
+    }
+}
+
+body {
+    font-family: "Nunito Sans";
+}
+ul::-webkit-scrollbar {
+    width: 14px;
+    height: 44px;          
+}
+ul::-webkit-scrollbar-thumb {
+    background-color: #333;  
+    border-radius: 36px;
+    border: 3px solid rgb(35,35,35);
+}
